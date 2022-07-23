@@ -20,11 +20,7 @@ pipeline {
                         then
                         echo "karan not present"
                         fi
-                        if [ ${params.Name} == 'faizan' ]
-                        then
-                        test('faizan')
-                        fi
-                        """
+                """
             }
         }
     }
