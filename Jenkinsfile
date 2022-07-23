@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Working on process..'
+                echo 'Working for you..'
                 test('faizan')
             }
         }
