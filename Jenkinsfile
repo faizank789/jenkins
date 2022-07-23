@@ -1,3 +1,5 @@
+#!/usr/bin/groovy
+
 @Library('jenkins_lib') _
 pipeline {                     
     agent any
