@@ -16,11 +16,11 @@ pipeline {
                 echo "version name is ${New_version}"
                 echo "code owner is ${code_owner}"
                 sh """
-                        if [ "$params.Name" == 'karan' ]
+                        if [ "${params.Name}" == 'karan' ]
                         then
                         echo "karan not present"
                         fi
-                        if [ "$params.Name" == 'faizan' ]
+                        if [ "${params.Name}" == 'faizan' ]
                         then
                         test('faizan')
                         fi
