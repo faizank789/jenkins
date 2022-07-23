@@ -1,9 +1,6 @@
-def call(name) {
-echo "welcome sir ${name}"
-}
-
-def school(name,school) {
-echo "student name ${name}"
-echo "school name ${school}"
-}
-
+class Example {
+   static def test(name) {
+      println(name)
+      println("This is how methods work in groovy");
+      println("This is an example of a simple method");
+   } 
