@@ -1,5 +1,5 @@
 @Library('jenkins_lib') _
-pipeline {                      # sample
+pipeline {                     
     agent any
     stages {
         stage('Hello') {
