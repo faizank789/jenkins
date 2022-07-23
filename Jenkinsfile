@@ -11,11 +11,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo "version name is ${New_version}"
-                echo "code owner is ${code_owner}"
+                echo "version name is ${env.New_version}"
+                echo "code owner is ${env.code_owner}"
                 script {
                         if ( "${params.Name}" == 'karan' ) {
                           echo "karan not preset"
+                          echo "school name is: ${env.school_name}"
                         }
                         if ("${params.Name}" == 'faizan' ) {
                         test('faizan')
