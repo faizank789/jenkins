@@ -1,5 +1,3 @@
-#!/usr/bin/groovy
-
 @Library('jenkins_lib') _
 pipeline {                     
     agent any
@@ -15,9 +13,15 @@ pipeline {
             steps {
                 echo "version name is ${New_version}"
                 echo "code owner is ${code_owner}"
-                echo "${Name}"
+                script {
+                        if ( "${params.Name}" == 'karan' ) {
+                          echo "karan not preset"
+                        }
+                        if ("${params.Name}" == 'faizan' ) {
+                        test('faizan')
+                        }
+                }
             }
         }
     }
 }
-
