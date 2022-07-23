@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Welcome'
                 test('faizan')
+                school('faian','kampoo')
             }
         }
     }
