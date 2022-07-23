@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Working on process..'
-                code('faizan')
+                test('faizan')
             }
         }
     }
