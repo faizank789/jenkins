@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'process'
+                echo 'process is going on'
                 test('faizan')
             }
         }
